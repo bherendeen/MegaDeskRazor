@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="px-4 py-5 my-5 text-center bg-dark bg-opacity-10">
+    <img class="d-block mx-auto mb-4" src="~/images/logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">Mega Desk</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            Mega Desk is a desk customization app that simplifies creating personalized desks. Users input dimensions, choose materials and options, and calculate costs for their custom desk. It's a user-friendly tool for designing and visualizing ideal desks.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a type="button" class="btn btn-primary btn-lg px-4 gap-3" asp-area="" asp-page="/Desks/Create">New Quote</a>
+            <a type="button" class="btn btn-outline-secondary btn-lg px-4" asp-area="" asp-page="/Desks/Index">All Quotes</a>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Mega Desk Features</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <i class="bi bi-arrows-fullscreen" style="color: cornflowerblue;"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Sizing</h3>
+            <p>Mega Desk has many sizes available to choose from. Customize your desk to fit any size needed.</p>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <i class="bi bi-tree-fill" style="color: cornflowerblue;"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Material</h3>
+            <p>Choose from up to five different materials. Have your personalized desk fit your style.</p>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <i class="bi bi-inboxes-fill" style="color: cornflowerblue;"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Drawers</h3>
+            <p>Mega Desk allows for the options of up to seven custom drawers. Get the space you need.</p>
+        </div>
+    </div>
+</div>

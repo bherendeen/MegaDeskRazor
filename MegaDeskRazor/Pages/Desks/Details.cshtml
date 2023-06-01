@@ -1,0 +1,100 @@
+﻿@page
+@model MegaDeskRazor.Pages.Desks.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+    <div class="card my-5">
+        <div class="card-body mx-4">
+            <div class="container">
+                <h1 class="my-5" style="font-size: 30px;">Quote Details</h1>
+                <div class="row">
+                    <ul class="list-unstyled">
+                    <li class="text-black">@Html.DisplayFor(model => model.Desk.CustomerName)</li>
+                    <li class="text-muted mt-1"><span class="text-black">Invoice</span> #@Model.Desk?.Id</li>
+                    <li class="text-black mt-1">@Html.DisplayFor(model => model.Desk.Date)</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <h4>Material</h4>
+            <table class="table table-striped mt-4">
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.SurfaceMaterialType)</td>
+                        <td class="text-end">@Html.DisplayFor(model => model.Desk.SurfaceMaterialType)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.TotalSurfaceMaterialCost)</td>
+                        <td class="text-end"><strong>@Html.DisplayFor(model => model.Desk.TotalSurfaceMaterialCost)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Dimensions</h4>
+            <table class="table table-striped mt-4">
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.DeskWidth)</td>
+                        <td class ="text-end">@Html.DisplayFor(model => model.Desk.DeskWidth)"</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.DeskDepth)</td>
+                        <td class="text-end">@Html.DisplayFor(model => model.Desk.DeskDepth)"</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.TotalArea)</td>
+                        <td class="text-end">@Html.DisplayFor(model => model.Desk.TotalArea)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.TotalSurfaceCost)</td>
+                        <td class="text-end"><strong>@Html.DisplayFor(model => model.Desk.TotalSurfaceCost)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Drawers</h4>
+            <table class="table table-striped mt-4">
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.DeskNumDrawers)</td>
+                        <td class="text-end">@Html.DisplayFor(model => model.Desk.DeskNumDrawers)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.TotalDrawerCost)</td>
+                        <td class="text-end"><strong>@Html.DisplayFor(model => model.Desk.TotalDrawerCost)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Shipping</h4>
+            <table class="table table-striped mt-4">
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.ShippingType)</td>
+                        <td class="text-end">@Html.DisplayFor(model => model.Desk.ShippingType)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Desk.TotalShippingCost)</td>
+                        <td class="text-end"><strong>@Html.DisplayFor(model => model.Desk.TotalShippingCost)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row text-end">
+                <ul class="list-unstyled">
+                    <li class="text-black">@Html.DisplayNameFor(model => model.Desk.BasePrice): <strong>@Html.DisplayFor(model => model.Desk.BasePrice)</strong></li>
+                    <li class="text-black mt-1 h4"><strong>@Html.DisplayNameFor(model => model.Desk.TotalCost): @Html.DisplayFor(model => model.Desk.TotalCost)</strong></li>
+                </ul>
+            </div>
+                <div class="mt-5">
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@Model.Desk?.Id">Edit</a>
+                    <a class="btn btn-secondary" asp-page="./Index">Back to List</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+

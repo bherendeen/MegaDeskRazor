@@ -1,0 +1,87 @@
+﻿@page
+@model MegaDeskRazor.Pages.Desks.EditModel
+
+@{
+    ViewData["Title"] = "Edit Quote";
+}
+
+<div class="my-5">
+    <h1>Edit Quote</h1>
+
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Desk.Id" />
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.CustomerName" class="control-label"></label>
+                        <input asp-for="Desk.CustomerName" class="form-control" />
+                        <span asp-validation-for="Desk.CustomerName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.DeskWidth" class="control-label"></label>
+                        <input asp-for="Desk.DeskWidth" class="form-control" />
+                        <span asp-validation-for="Desk.DeskWidth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.DeskDepth" class="control-label"></label>
+                        <input asp-for="Desk.DeskDepth" class="form-control" />
+                        <span asp-validation-for="Desk.DeskDepth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.DeskNumDrawers" class="control-label"></label>
+                        <select asp-for="Desk.DeskNumDrawers" class="form-select" aria-label="Number of Drawers">
+                            <option selected disabled>Select</option>
+                            <option value="0">0 - Zero</option>
+                            <option value="1">1 - One</option>
+                            <option value="2">2 - Two</option>
+                            <option value="3">3 - Three</option>
+                            <option value="4">4 - Four</option>
+                            <option value="5">5 - Five</option>
+                            <option value="6">6 - Six</option>
+                            <option value="7">7 - Seven</option>
+                        </select>
+                        <span asp-validation-for="Desk.DeskNumDrawers" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.SurfaceMaterialIndex" class="control-label"></label>
+                        <select asp-for="Desk.SurfaceMaterialIndex" class="form-select" aria-label="Material Index" id="materialSelect">
+                            <option selected disabled>Select</option>
+                            <option value="1">Laminate</option>
+                            <option value="2">Oak</option>
+                            <option value="3">Pine</option>
+                            <option value="4">Rosewood</option>
+                            <option value="5">Veneer</option>
+                        </select>
+                        <span asp-validation-for="Desk.SurfaceMaterialIndex" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Desk.ShippingTypeIndex" class="control-label"></label>
+                        <select asp-for="Desk.ShippingTypeIndex" class="form-select" aria-label="Shipping Type Index">
+                            <option selected disabled>Select</option>
+                            <option value="3">3 Day Rush</option>
+                            <option value="5">5 Day Rush</option>
+                            <option value="7">7 Day Rush</option>
+                            <option value="14">14 Day Standard</option>
+                        </select>
+                        <span asp-validation-for="Desk.ShippingTypeIndex" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="submit" value="Update" class="btn btn-primary" />
+                        <a class="btn btn-secondary btn-sm" asp-page="Index">Back to List</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 col-sm-12 d-flex justify-content-center align-items-center">
+                <img id="materialImage" src="~/images/default-image.jpg" class="img-fluid w-50 h-auto" alt="Desk">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

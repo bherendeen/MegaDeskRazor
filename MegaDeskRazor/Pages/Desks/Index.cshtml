@@ -1,0 +1,95 @@
+﻿@page
+@model MegaDeskRazor.Pages.Desks.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container my-5">
+<h1>All Quotes</h1>
+
+<hr />
+
+<div class="mt-3">
+    <a class="btn btn-primary" asp-page="Create">Create New Quote</a>
+</div>
+
+<div class="row mt-4">
+    <div class="col-4">
+        <form class="d-flex flex-column mt-3" role="search">
+            <label for="customerName" class="form-label">Search Customer Name's</label>
+            <div class="d-flex">
+                <input class="form-control me-2" id="customerName" type="search" placeholder="Search" asp-for="SearchString" aria-label="Search Customer's Name">
+                <button class="btn btn-primary" type="submit" value="Filter">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="table-responsive">
+    <table class="table table-striped mt-4">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].Date)
+            </th>
+            <th>
+                    <a class="text-white" asp-page-handler="Sort" asp-route-sortOrder="@("asc".Equals(Model.SortOrder, StringComparison.OrdinalIgnoreCase) ? "desc" : "asc")" asp-route-sortBy="name">@Html.DisplayNameFor(model => model.Desk[0].CustomerName) <i class="bi bi-chevron-expand"></i></a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].DeskWidth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].DeskDepth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].DeskNumDrawers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].SurfaceMaterialType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].ShippingType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].TotalCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Desk) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeskWidth)"
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeskDepth)"
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeskNumDrawers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurfaceMaterialType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippingType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCost)
+            </td>
+            <td>
+                <a class="btn btn-secondary btn-sm m-2" asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-secondary btn-sm m-2" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                <a class="btn btn-secondary btn-sm m-2" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </div>
+</div>
