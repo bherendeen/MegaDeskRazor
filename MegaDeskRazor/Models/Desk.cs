@@ -53,7 +53,6 @@ namespace MegaDeskRazor.Models
         [Required] // Required
         public string? ShippingTypeIndex { get; set; }
 
-        // --------------------------------------------------
 
         // [CALCULATED] DATE
         [Display(Name = "Date Created")] // Display name
@@ -61,8 +60,8 @@ namespace MegaDeskRazor.Models
         public DateTime Date { get; set; }
 
         // [CALCULATED] TOTAL AREA
-        [Display(Name = "Total Area")] // Display name
-        public int TotalArea { get; set; } // Calculated field for TotalArea
+        [Display(Name = "Total Area")] // Display name.
+        public int TotalArea { get; set; } // Calculated field for TotalArea.
 
         // [CALCULATED] TOTAL SURFACE COST
         [Display(Name = "Total Surface Cost")] // Display name

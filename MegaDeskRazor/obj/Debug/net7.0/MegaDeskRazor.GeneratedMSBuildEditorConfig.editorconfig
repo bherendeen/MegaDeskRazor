@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MegaDeskRazor
 build_property.RootNamespace = MegaDeskRazor
-build_property.ProjectDir = C:\Users\Benjamin Herendeen\source\repos\MegaDeskRazor\MegaDeskRazor\MegaDeskRazor\
+build_property.ProjectDir = C:\Users\lauri\Source\Repos\MegaDeskRazorFINISH\MegaDeskRazor\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Benjamin Herendeen\source\repos\MegaDeskRazor\MegaDeskRazor\MegaDeskRazor
+build_property.MSBuildProjectDirectory = C:\Users\lauri\Source\Repos\MegaDeskRazorFINISH\MegaDeskRazor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Desks/Create.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Desks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVza3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Desks/Delete.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Desks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVza3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Desks/Details.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Desks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVza3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Desks/Edit.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Desks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVza3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Desks/Index.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Desks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVza3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Error.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Index.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Privacy.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/_ViewImports.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/_ViewStart.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin Herendeen/source/repos/MegaDeskRazor/MegaDeskRazor/MegaDeskRazor/Pages/Shared/_Layout.cshtml]
+[C:/Users/lauri/Source/Repos/MegaDeskRazorFINISH/MegaDeskRazor/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hnaduwuryq
