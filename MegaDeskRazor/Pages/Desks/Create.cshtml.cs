@@ -46,13 +46,13 @@ namespace MegaDeskRazor.Pages.Desks
                 return Page();
             }
 
-            // Calculate Date
+            // System Calculate Date
             Desk.Date = DateTime.Now;
 
-            // Calculate TotalArea
+            // System Calculate TotalArea
             Desk.TotalArea = Desk.DeskWidth * Desk.DeskDepth;
 
-            // Calculate TotalSurfaceCost
+            // System Calculate TotalSurfaceCost
             int chargeableArea;
             if (Desk.TotalArea > NonChargeableArea)
             {
@@ -64,10 +64,10 @@ namespace MegaDeskRazor.Pages.Desks
             }
             Desk.TotalSurfaceCost = chargeableArea * 1.00m;
 
-            // Calculate TotalDrawerCost
+            // System Calculate TotalDrawerCost
             Desk.TotalDrawerCost = Desk.DeskNumDrawers * CostPerDrawer;
 
-            // Calculate TotalSurfaceMaterialCost
+            // System Calculate TotalSurfaceMaterialCost
             string surfaceMaterialType = "";
             int materialCost;
             switch (Desk.SurfaceMaterialIndex)
@@ -99,7 +99,7 @@ namespace MegaDeskRazor.Pages.Desks
             Desk.SurfaceMaterialType = surfaceMaterialType;
             Desk.TotalSurfaceMaterialCost = materialCost;
 
-            // Calculate TotalShippingCost
+            // System Calculate TotalShippingCost
             string rushOrderPriceFile = Path.Combine(_env.ContentRootPath, "Data", "rushOrderPrices.txt");
             string[] prices = System.IO.File.ReadAllLines(rushOrderPriceFile);
 
@@ -182,11 +182,11 @@ namespace MegaDeskRazor.Pages.Desks
             Desk.ShippingType = shippingType;
             Desk.TotalShippingCost = shippingCost;
 
-            // Set BasePrice
+            // System Set BasePrice
             decimal BaseCost = BasePrice;
             Desk.BasePrice = BaseCost;
 
-            // Calculate TotalCost
+            // System Calculate TotalCost
             decimal totalCost = BasePrice + Desk.TotalSurfaceMaterialCost + Desk.TotalDrawerCost + Desk.TotalSurfaceCost + Desk.TotalShippingCost;
             Desk.TotalCost = totalCost;
 
