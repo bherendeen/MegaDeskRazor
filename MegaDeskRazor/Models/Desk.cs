@@ -53,6 +53,7 @@ namespace MegaDeskRazor.Models
         [Required] // Required
         public string? ShippingTypeIndex { get; set; }
 
+        // --------------------------------------------------
 
         // [CALCULATED] DATE
         [Display(Name = "Date Created")] // Display name
