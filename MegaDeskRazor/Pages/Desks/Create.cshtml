@@ -19,16 +19,22 @@
                         <input asp-for="Desk.CustomerName" class="form-control" />
                         <span asp-validation-for="Desk.CustomerName" class="text-danger"></span>
                     </div>
+                    
+                    // This is for width selection
                     <div class="form-group mb-3">
                         <label asp-for="Desk.DeskWidth" class="control-label"></label>
                         <input asp-for="Desk.DeskWidth" class="form-control" />
                         <span asp-validation-for="Desk.DeskWidth" class="text-danger"></span>
                     </div>
+                    
+                    // This is for depth selection
                     <div class="form-group mb-3">
                         <label asp-for="Desk.DeskDepth" class="control-label"></label>
                         <input asp-for="Desk.DeskDepth" class="form-control" />
                         <span asp-validation-for="Desk.DeskDepth" class="text-danger"></span>
                     </div>
+                    
+                    // This is for drawer selection
                     <div class="form-group mb-3">
                         <label asp-for="Desk.DeskNumDrawers" class="control-label"></label>
                         <select asp-for="Desk.DeskNumDrawers" class="form-select" aria-label="Number of Drawers">
@@ -44,6 +50,8 @@
                         </select>
                         <span asp-validation-for="Desk.DeskNumDrawers" class="text-danger"></span>
                     </div>
+                    
+                    // This is for the material selection
                     <div class="form-group mb-3">
                         <label asp-for="Desk.SurfaceMaterialIndex" class="control-label"></label>
                         <select asp-for="Desk.SurfaceMaterialIndex" class="form-select" aria-label="Material Index" id="materialSelect">
@@ -56,6 +64,8 @@
                         </select>
                         <span asp-validation-for="Desk.SurfaceMaterialIndex" class="text-danger"></span>
                     </div>
+                    
+                    // This is for the rush order selection
                     <div class="form-group mb-3">
                         <label asp-for="Desk.ShippingTypeIndex" class="control-label"></label>
                         <select asp-for="Desk.ShippingTypeIndex" class="form-select" aria-label="Shipping Type Index">
