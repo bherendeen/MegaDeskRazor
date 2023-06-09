@@ -47,7 +47,7 @@ namespace MegaDeskRazor.Pages.Desks
                 desks = desks.Where(s => s.CustomerName.Contains(SearchString));
             }
 
-            // Sorting by Customer Name
+            // Sorting by Customer Nam
             switch (SortBy)
             {
                 case "name":
